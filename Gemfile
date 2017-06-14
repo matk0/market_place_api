@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.3.1'
 
 gem 'rails', '4.2.6'
 gem 'sqlite3'
@@ -25,4 +26,5 @@ group :test do
   gem "rspec-rails"
   gem "factory_girl_rails"
   gem 'ffaker'
+  gem 'shoulda-matchers'
 end
