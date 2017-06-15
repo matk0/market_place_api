@@ -5,8 +5,6 @@ RSpec.describe "Api::V1::UsersController", type: :controller do
   let!(:user) { FactoryGirl.create :user }
 
   before(:each) do
-    request.headers['Accept'] = "application/vnd.marketplace.v1, #{Mime::JSON}"
-    request.headers['Content-Type'] = Mime::JSON.to_s
     @controller = Api::V1::UsersController.new
   end
 
